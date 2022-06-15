@@ -5496,11 +5496,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\miguel.flores\\Documents\\Dev_T2\\Escola\\back\\escolaNc\\escolaNc.csproj",
+      "projectUniqueName": "C:\\Users\\miguel.flores\\Documents\\Dev_T2\\NotaControl-Internship\\back\\escolaNc\\escolaNc.csproj",
       "projectName": "escolaNc",
-      "projectPath": "C:\\Users\\miguel.flores\\Documents\\Dev_T2\\Escola\\back\\escolaNc\\escolaNc.csproj",
+      "projectPath": "C:\\Users\\miguel.flores\\Documents\\Dev_T2\\NotaControl-Internship\\back\\escolaNc\\escolaNc.csproj",
       "packagesPath": "C:\\Users\\miguel.flores\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\miguel.flores\\Documents\\Dev_T2\\Escola\\back\\escolaNc\\obj\\",
+      "outputPath": "C:\\Users\\miguel.flores\\Documents\\Dev_T2\\NotaControl-Internship\\back\\escolaNc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\miguel.flores\\AppData\\Roaming\\NuGet\\NuGet.Config",

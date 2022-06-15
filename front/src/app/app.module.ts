@@ -10,6 +10,7 @@ import { CadastroComponent } from './areas/cadastro/cadastro.component';
 import { ContratacaoComponent } from './areas/contratacao/contratacao.component';
 import { LoginComponent } from './areas/login/login.component';
 import { PrincipalComponent } from './areas/principal/principal.component';
+import { RelatoriosComponent } from './areas/relatorios/relatorios.component';
 import { ServicosComponent } from './areas/servicos/servicos.component';
 import { UsuarioComponent } from './areas/usuario/usuario.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -17,13 +18,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    PrincipalComponent,
     NavbarComponent,
     UsuarioComponent,
     CadastroComponent,
     ServicosComponent,
     ContratacaoComponent,
-    LoginComponent,
-    PrincipalComponent
+    RelatoriosComponent,
   ],
   imports: [
     BrowserModule,

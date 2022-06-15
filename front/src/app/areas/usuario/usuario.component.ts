@@ -102,6 +102,29 @@ export class UsuarioComponent implements OnInit {
     this.nome = item.nome;
   }
 
-  public imprimir(obj: string) {}
+  public imprimir(obj: string) {
+    var elemento = document.getElementById(obj);
+    var html = elemento?.innerHTML;
+    var printWindow = window.open(
+    "",
+    "",
+    "left=50000,top=0,width=1000px,height=0px,toolbar=yes,location=yes,directories=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes"
+    );
+
+    var data = new Date;
+
+    printWindow?.document.write("<html>");
+    printWindow?.document.write("<head>");
+    printWindow?.document.write('<style> * { font-size: 0.85rem; font-family: sans-serif; } table { border-spacing: 1em 0.2em; } thead { text-align: left; }</style>');
+    printWindow?.document.write('<style>@page { size: A4; margin: 5mm 5mm 5mm 5mm; } .printCpf { white-space: nowrap; } .teste { display: none; } button { display: none; }; #linha {display:contents;}</style>');
+    printWindow?.document.write("</head>");
+    printWindow?.document.write("<body>");
+    printWindow?.document.write("<h2>Lista de Usuários - " + data.toLocaleString() + "</h2><hr>")
+    printWindow?.document.write(html ? html : '');
+    printWindow?.document.write("</body>");
+    printWindow?.document.write("</html>");
+    printWindow?.document.close();
+    printWindow?.print();
+    }
 
 }

@@ -6,21 +6,18 @@
       <h2>Usuários Cadastrados</h2>
     </div>
 
-    <div class="flex-item printnone">
-      <a routerLink="/cadastro">
-        <button class="btn btn-sm btn-outline-success me-2">
-          <i class="bi bi-plus-lg"></i>
-        </button>
-      </a>
-      <a href="">
-        <button
-          class="btn btn-sm btn-outline-success me-2"
-          (click)="imprimir('conteudo')"
-        >
-          <i class="bi bi-printer"></i>
-        </button>
-      </a>
+    <div class="flex-item">
+
+      <button class="btn btn-sm btn-outline-success me-2" routerLink="/principal/cadastro">
+        <i class="bi bi-plus-lg"></i>
+      </button>
+
+      <button class="btn btn-sm btn-outline-success me-2" (click)="imprimir('conteudo')">
+        <i class="bi bi-printer"></i>
+      </button>
+
     </div>
+
   </div>
 
   <div id="conteudo" class="row">
@@ -35,7 +32,7 @@
             <th>Data de Nascimento</th>
             <th>Rua</th>
             <th>Cidade</th>
-            <th class="printnone">Opções</th>
+            <th class="printnone teste">Opções</th>
           </tr>
         </thead>
         <tbody>

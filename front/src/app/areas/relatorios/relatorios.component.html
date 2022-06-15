@@ -1,0 +1,67 @@
+<div class="container">
+
+  <select [(ngModel)]="rel" class="form-select" (change)="setValor()">
+    <option value="0" selected disabled>Selecione um relatório</option>
+    <option value="1">Relatório de faturemanto</option>
+    <option value="">Relatório de inadimplentes</option>
+  </select>
+
+  <div>
+
+
+    <table *ngIf="relFaturamento" class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th>iD_SERVICO</th>
+          <th>descricao</th>
+          <th>assinantes</th>
+          <th>valor</th>
+          <th>faturamento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of faturamentoTabela;">
+          <td>{{item.iD_SERVICO}}</td>
+          <td>{{item.descricao}}</td>
+          <td>{{item.assinantes}}</td>
+          <td>{{item.valor}}</td>
+          <td>{{item.faturamento}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div *ngIf="consultaCpf" class="input-group mb-3">
+    <input [(ngModel)]="cpf" type="text" class="form-control" placeholder="Digite um CPF">
+    <button class="btn btn-outline-success" type="button" (click)="setValor(2)">Buscar</button>
+  </div>
+  <div *ngIf="relInadimplentes">
+
+
+    <table class="table table-dark table-hover">
+
+      <thead>
+        <tr>
+          <th>CPF</th>
+          <th>NOME</th>
+          <th>DESCRIÇÃO</th>
+          <th>PREÇO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of inadimplentesTabela;">
+          <td>{{item.CPF}}</td>
+          <td>{{item.NOME}}</td>
+          <td>{{item.DESCRICAO}}</td>
+          <td>{{item.PRECO}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+</div>
+
+
